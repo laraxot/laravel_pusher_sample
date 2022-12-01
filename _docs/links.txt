@@ -1,0 +1,40 @@
+https://fly.io/laravel-bytes/streaming-to-the-browser-with-livewire/
+
+https://calebporzio.com/video-realtime-livewire-w-laravel-echo-pusher
+
+https://www.youtube.com/watch?v=uQO4Xh1gMpY
+
+https://sebastiandedeyne.com/server-side-rendering-javascript-from-php/
+
+https://github.com/spatie/laravel-server-side-rendering
+
+Server-Sent Events
+
+
+reated() {
+    this.setupStream();
+},
+methods: {
+    setupStream() {
+        // Not a real URL, just using for demo purposes
+        let es = new EventSource('http://awesomestockdata.com/feed');
+
+        es.addEventListener('message', event => {
+            let data = JSON.parse(event.data);
+            this.stockData = data.stockData;
+        }, false);
+    }
+
+https://developer.mozilla.org/en-US/docs/Web/API/EventSource
+
+
+https://github.com/mdn/dom-examples/blob/main/server-sent-events/sse.php
+
+
+https://github.com/hhxsv5/php-sse/blob/master/examples/sse.php
+
+
+
+
+
+
